@@ -25,6 +25,8 @@ See below for a quickstart guide:
   
    - `task1_relativeTime.py`    For Task1 - Relative Time
       "The Result will be stored inside Results Folder under Main project directory
+   - `task2_windDirection.py`    For Task2 - Time when changing wind direction
+      "The Result will be stored inside Results Folder under Main project directory
 
 4. The main GUI elements will now load, feel free to customise the CA parameters on the left hand panel
 5. Run the CA with your parameters by clicking the bottom left button 'Apply configuration & run CA'
