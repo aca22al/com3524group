@@ -336,17 +336,16 @@ def apply_Shortterm_Intervention(grid):
     # print ("****Time stamp =" +  str(timestep))
 
     #Drop water near incinerator for TASK3:
-    if (timestep == 1 and applyIntervention == True) :
+    #if (timestep == 1 and applyIntervention == True) :
         # Area = 8 cells (x) =8*0.25 = 2 km = 2km^2
-        for y in range(0,8):
-            for x in range(191,192):
-                gridWithIntervention[y][x] = LAKE 
+    #    for y in range(0,8):
+    #        for x in range(191,192):
+    #            gridWithIntervention[y][x] = LAKE 
 
         # Area = 8 cells (x) =8*0.25 = 2 km = 2km^2
-        for y in range(7,8):
-            for x in range(192,200):
-                gridWithIntervention[y][x] = LAKE 
-        applyIntervention = False   
+       #      for x in range(192,200):
+     #           gridWithIntervention[y][x] = LAKE 
+    #    applyIntervention = False   
 
     # # Drop water near incinerator for TASK3:
     # if (timestep == 12 and applyIntervention == True) :
@@ -408,6 +407,13 @@ def apply_Shortterm_Intervention(grid):
     #         for x in range(105,106):
     #             gridWithIntervention[y][x] = LAKE 
     #     applyIntervention = False
+
+    if (timestep == 70 and applyIntervention == True) :
+        for y in range(75,85):
+            for x in range(170,180):
+                gridWithIntervention[y][x] = LAKE
+        applyIntervention = False
+    
         
 
     grid = gridWithIntervention
