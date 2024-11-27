@@ -190,6 +190,10 @@ def setup(args):
         for x in range(176,200):
             gridray[y][x] = FOREST 
 
+    for y in range(80,100):
+        for x in range(0,40):
+            gridray[y][x] = FOREST
+
     # the GUI calls this to pass the user defined config
     # into the main system with an extra argument
     # do not change
