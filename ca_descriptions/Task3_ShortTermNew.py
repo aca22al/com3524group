@@ -55,7 +55,7 @@ windDirectionALL = ["north","south","east","west","northeast","northwest","south
 windDirection = windDirectionALL[0]
 
 #change values to change wind effect on spread, towards and against
-fromWProb = 2.5
+fromWProb = 2.7
 OppWProb = 0.3
 
 # ******  VITAL INFORMATION *******
@@ -408,11 +408,30 @@ def apply_Shortterm_Intervention(grid):
     #             gridWithIntervention[y][x] = LAKE 
     #     applyIntervention = False
 
-    if (timestep == 70 and applyIntervention == True) :
-        for y in range(75,85):
-            for x in range(170,180):
+    # Example of drop the water on the southernmost side of the right side of the forest
+    if (timestep == 0 and applyIntervention == True) :
+        for y in range(70,80):
+            for x in range(170,190):
                 gridWithIntervention[y][x] = LAKE
         applyIntervention = False
+
+    # Example of drop the water on the northernmost side of the right side of the forest
+    #if (timestep == 0 and applyIntervention == True) :
+    #    for y in range(70,80):
+    #        for x in range(170,190):
+    #            gridWithIntervention[y][x] = LAKE
+    #    applyIntervention = False
+
+    # Example of drop the water on the southernmost side of the left side of the forest
+    #if (timestep == 0 and applyIntervention == True) :
+    #    for y in range(70,80):
+    #        for x in range(100,120):
+    #            gridWithIntervention[y][x] = LAKE
+    #    applyIntervention = False
+
+
+    
+
     
         
 
